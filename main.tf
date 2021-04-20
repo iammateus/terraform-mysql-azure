@@ -96,7 +96,7 @@ resource "azurerm_virtual_machine" "vm" {
   os_profile {
     computer_name  = "myTFVM"
     admin_username = "mateus"
-    admin_password = "teteuS2"
+    admin_password = "AstrongP4ss"
   }
 
   os_profile_linux_config {
@@ -115,7 +115,7 @@ resource "null_resource" "upload" {
         connection {
             type = "ssh"
             user = "mateus"
-            password = "teteuS2"
+            password = "AstrongP4ss"
             host = azurerm_public_ip.publicip.ip_address
         }
     }
@@ -129,18 +129,18 @@ resource "null_resource" "deploy" {
         connection {
             type = "ssh"
             user = "mateus"
-            password = "teteuS2"
+            password = "AstrongP4ss"
             host = azurerm_public_ip.publicip.ip_address
         }
         inline = [
             "sudo apt-get update",
-            "echo 'mysql-server mysql-server/root_password password teteuS2' | sudo debconf-set-selections",
-            "echo 'mysql-server mysql-server/root_password_again password teteuS2' | sudo debconf-set-selections",
+            "echo 'mysql-server mysql-server/root_password password AstrongP4ss' | sudo debconf-set-selections",
+            "echo 'mysql-server mysql-server/root_password_again password AstrongP4ss' | sudo debconf-set-selections",
             "sudo apt-get -y install mysql-server",
             "sudo chmod 777 /etc/mysql/mysql.conf.d/mysqld.cnf",
             "sudo cat /tmp/mysql/mysqld.cnf > /etc/mysql/mysql.conf.d/mysqld.cnf",
             "sudo service mysql restart",
-            "mysql -u root -p'teteuS2' < /tmp/mysql/users.sql 2>/dev/null",
+            "mysql -u root -p'AstrongP4ss' < /tmp/mysql/users.sql 2>/dev/null",
         ]
     }
 }
