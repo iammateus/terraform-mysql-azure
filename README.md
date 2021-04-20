@@ -22,8 +22,8 @@ Use the Azure CLI to authenticate to Microsoft Azure.
 
 | User | Password | Connectivity |
 |--|--|--|
-| root| AstrongP4ss | only guest machine |
-| mateus| mateus | guest and host |
+| root| AstrongP4ss | local |
+| mateus| mateus | local and external |
 
 ## License
 
