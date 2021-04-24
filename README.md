@@ -1,4 +1,4 @@
-# terraform-mysql
+# terraform-azure-mysql
 
 A Terraform project that deploys a MySQL virtual machine in Microsoft Azure.
 
