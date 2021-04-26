@@ -1,4 +1,4 @@
-# terraform-azure-mysql
+# terraform-mysql-azure
 
 A Terraform project that deploys a MySQL virtual machine in Microsoft Azure.
 
@@ -27,4 +27,4 @@ Use the Azure CLI to authenticate to Microsoft Azure.
 
 ## License
 
-[MIT](https://github.com/iammateus/terraform-mysql/blob/main/LICENSE)
+[MIT](https://github.com/iammateus/terraform-mysql-azure/blob/main/LICENSE)
