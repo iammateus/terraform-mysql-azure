@@ -1,12 +1,12 @@
-# terraform-mysql
+# terraform-mysql-azure
 
 A Terraform project that deploys a MySQL virtual machine in Microsoft Azure.
 
 ## Requeriments
 
-1. [Terraform](https://www.terraform.io/).
-2. [Azure Account](https://azure.microsoft.com/en-us/).
-3. [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
+- [Terraform](https://www.terraform.io/)
+- [Azure Account](https://azure.microsoft.com/en-us/)
+- A configured [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 ## Installation
 
@@ -27,4 +27,4 @@ Use the Azure CLI to authenticate to Microsoft Azure.
 
 ## License
 
-[MIT](https://github.com/iammateus/terraform-mysql/blob/main/LICENSE)
+[MIT](https://github.com/iammateus/terraform-mysql-azure/blob/main/LICENSE)
