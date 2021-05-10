@@ -10,8 +10,6 @@ A Terraform project that deploys a MySQL virtual machine in Microsoft Azure.
 
 ## Installation
 
-Use the Azure CLI to authenticate to Microsoft Azure.
-
     $ terraform apply
     
 ## How to connect externally
